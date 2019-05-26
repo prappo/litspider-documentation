@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LitSpider - Social Media Scraping script</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous">
+    </script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Lit</span><span class="text-bold">Spider</span>
+                        </a>
+                    </h1>
+
+                </div>
+                <!--//branding-->
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">LitSpider</a></li>
+                    <li class="breadcrumb-item active">Documentation</li>
+                </ol>
+
+
+
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-book"></i> Documentation</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: March 28th, 2019</div>
+                </div>
+                <!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="overview-section" class="doc-section">
+                                <h2 class="section-title">Overview</h2>
+                                <div class="section-block">
+                                    <p>
+                                        LitSpider is social media scraping tool with SaaS features.
+                                    </p>
+
+                                </div>
+                            </section>
+                            <!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="server-requirements" class="section-block">
+                                    <h1>Server Requirements</h1>
+                                    <p>Before you install LitSpider make sure your server meets the following
+                                        Requirements</p>
+                                    <div>
+                                        <ul>
+                                            <li>PHP 7.1.13+</li>
+                                            <li>MySQL 5.6+ or MariaDB 10.0+</li>
+                                            <li>Intl PHP Extension</li>
+                                            <li>OpenSSL PHP Extension</li>
+                                            <li>PDO PHP Extension</li>
+                                            <li>Mbstring PHP Extension</li>
+                                            <li>Tokenizer PHP Extension</li>
+                                            <li>XML PHP Extension</li>
+                                            <li>Ctype PHP Extension</li>
+                                            <li>JSON PHP Extension</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--//section-block-->
+                                <div id="litspider-installation" class="section-block">
+                                    <h3 class="block-title">Installation LitSpider</h3>
+                                    <h4>Step 1 , Extract and Upload file</h4>
+
+                                    <p>
+                                        Unzip the downloaded archive package. Rename the <code>LitSpider</code>
+                                        directory to your desired directory name and upload the directory to your web
+                                        server through FTP or Control Panel.
+                                    </p>
+
+                                    <h4>Step 2 , Creating Database</h4>
+                                    <p>Create a database for <code>LitSpider</code> through your server control panel.
+                                        If your server has phpMyAdmin, then you can also create a database using
+                                        phpMyAdmin.</p>
+
+                                    <h4>
+                                        Step 3: Run Installation Wizard
+                                    </h4>
+                                    <p>
+                                        Go to your website address, then you'll see an installation wizard. If you don't
+                                        see then go to <code>/install</code> route and you will see the installation
+                                        wizard
+                                    </p>
+                                    <img src="assets/images/Installer.png">
+                                    <br>
+                                    <br>
+                                    <b>
+                                        <h4>Pre Requirements </h4>
+                                    </b>
+                                    <p>Click <code>Check Requirements</code> button to check pre installation checks
+                                    </p>
+                                    <img src="assets/images/Installer1.png"> <br><br>
+                                    <p>
+                                        If you see everyting ok then next step you need to check the folder permisson
+                                        required .
+                                        So for that click the <code>Check permisson</code> button to check the required
+                                        folder permission
+
+                                    </p> <br> <br>
+                                    <img src="assets/images/Installer2.png"> <br>
+                                    <p>
+                                        If you see permission ok then you are ready to install the script.
+                                        Now click the <code>Configure Environment</code> button
+                                    </p>
+                                    <img src="assets/images/Installer3.png">
+                                    <p>
+                                        Click the <code>Form Wizard Setup</code> button then you will see someting like
+                                        the image
+                                        below. Write down you App ( Application / Software name ) and select your
+                                        desired options
+                                    </p>
+                                    <img src="assets/images/Installer4.png">
+                                    <br>
+                                    <p>
+                                        Now setup the database for your application.
+                                        Click the <code>Setup Database</code> button
+                                        You will see the database setup wizard
+                                    </p>
+                                    <img src="assets/images/Installer5.png">
+                                    <br>
+                                    <p>
+                                        Fill the database name and credentials and install .
+                                        If your script install successfully then you will see something like this
+                                    </p>
+                                    <br>
+                                    <img src="assets/images/installation_complete.png">
+                                    <p>
+                                    <div class="callout-block callout-success">
+                                            <div class="icon-holder">
+                                                <i class="fas fa-thumbs-up"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">WOW:</h4>
+                                                <p>You installed successfully <a href="https://codecanyon.net/user/srigal" target="_blank">Click here</a> to contact us If you need any help.</p>
+                                            </div><!--//content-->
+                                        </div>
+                                    </p>
+                                        
+                                        
+
+
+
+
+
+
+                                </div>
+                                <!--//section-block-->
+
+                            </section>
+                            <!--//doc-section-->
+
+                            <section id="admin-section" class="doc-section">
+                                <h2 class="section-title">Admin Panel</h2>
+                                <div id="login-section" class="doc-section">
+
+                                
+                                <p>
+                                    After successfull installation go to login page .
+                                    login url <code>/login</code>
+                                    <br>
+                                    Default login details : <br>
+                                    <pre>
+                                        email : admin@email.com
+                                        password : 123456
+                                    </pre>
+
+                                </p>
+                            </div>
+
+                            <div id="admin-dashboard-section" class="doc-section">
+                                <p>
+                                After login you will see Dashboard. You can't see 
+                                anything on the Dashboard at first . You can change dashboard content
+                                from <code>Page Settings > User Page</code>
+                            </p>
+                            <img width="100%" src="assets/images/Dashboard.png">
+                            </div>
+                            </section>
+
+                        </div>
+                        <!--//content-inner-->
+                    </div>
+                    <!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#overview-section">Overview</a>
+                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#server-requirements">Server Requirements</a>
+                                    <a class="nav-link scrollto" href="#litspider-installation">LitSpider
+                                        Installation</a>
+
+                                </nav>
+
+                                <a class="nav-link scrollto" href="#admin-section">Admin panel</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#login-section">Login</a>
+                                    <a class="nav-link scrollto" href="#admin-dashboard-section">Dashboard</a>
+
+                                </nav>
+
+                                <a class="nav-link scrollto" href="#package-section">Package Overview</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#create-package-section">Create Package</a>
+                                    <a class="nav-link scrollto" href="#edit-package-section">Edit Package</a>
+
+                                </nav>
+
+                                <a class="nav-link scrollto" href="#facebook-section">Facebook Settings</a>
+                                <a class="nav-link scrollto" href="#twitter-section">Twitter Settings</a>
+                                <a class="nav-link scrollto" href="#instagram-section">Instagram Settings</a>
+                                <a class="nav-link scrollto" href="#pinterest-section">Facebook Settings</a>
+
+                                <a class="nav-link scrollto" href="#how-to-section">How to use</a>
+
+                                <a class="nav-link scrollto" href="#admin-section">Admin Settings</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#user-profile-section">User Profile</a>
+                                    <a class="nav-link scrollto" href="#user-managment-section">User Managment</a>
+                                    <a class="nav-link scrollto" href="#plugin-section">Plugins</a>
+                                    <a class="nav-link scrollto" href="#theme-section">Themes</a>
+                                    <a class="nav-link scrollto" href="#menu-section">Menu</a>
+                                    <a class="nav-link scrollto" href="#settings-section">Settings</a>
+                                    <a class="nav-link scrollto" href="#config-section">Config</a>
+                                    <a class="nav-link scrollto" href="#translation-section">Translation</a>
+                                    <a class="nav-link scrollto" href="#backup-section">Backup</a>
+                                    <a class="nav-link scrollto" href="#widgets-section">Widgets</a>
+
+                                </nav>
+
+                                <!--//nav-->
+
+                            </nav>
+                            <!--//doc-menu-->
+
+                        </div>
+                    </div>
+                    <!--//doc-sidebar-->
+                </div>
+                <!--//doc-body-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//doc-wrapper-->
+
+
+    </div>
+    <!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
