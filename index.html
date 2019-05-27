@@ -272,12 +272,44 @@
 
                 </section>
 
-                <section class="doc-section" id="facebook-section"></section>
-                <section class="doc-section" id="twitter-section"></section>
-                <section class="doc-section" id="instagram-section"></section>
-                <section class="doc-section" id="pinterest-section"></section>
-                <section class="doc-section" id="reddit-section"></section>
-                <section class="doc-section" id="how-to-section"></section>
+                <section class="doc-section" id="facebook-section">
+                    <h2 class="section-title">Facebook Settings</h2>
+                    <p>Watch the video about how to configure facebook for facebook scraping</p>
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/phBEmb-ZTfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </section>
+                <section class="doc-section" id="twitter-section">
+                    <h1 class="section-title">Twitter Settings</h1>
+                    <p>
+                        Go to <a target="_blank" href="https://developer.twitter.com/en/apps">https://developer.twitter.com/en/apps</a> and create a developer app. Copy the consumer key , consumer secret , access token , access token secret and paste it on <code>Twitter > Settings </code>
+                    </p>
+                </section>
+                <section class="doc-section" id="instagram-section">
+                    <h1 class="section-title">Instagram Settings</h1>
+                    <p>
+                        Put your instagram username and password at <code>Instagram > Settings</code> page
+                    </p>
+                </section>
+                <section class="doc-section" id="pinterest-section">
+                    <h1 class="section-title">Instagram Settings</h1>
+                    <p>
+                        Put your Pinterest username and password at <code>Pinterest > Settings</code> page
+                    </p>
+                </section>
+                <section class="doc-section" id="reddit-section">
+                    <h1 class="section-title">Reddit Settings</h1>
+                    <p>You don't need any configuration for this features</p>
+                </section>
+                <section class="doc-section" id="how-to-section">
+                    <h1 class="section-title">How it works</h1>
+                    <p>
+                        Watch the video about how the LitSpider works
+                    </p>
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N7R61D9Y3vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </section>
                 <section class="doc-section" id="admin-settings-section">
                     <h2 class="section-title">Admin Settings</h2>
                     <p>We made a complete admin solution for your software. Everything you need as a admin we included
@@ -354,22 +386,75 @@
             </p>
 
             <h4 class="section-title"># Create menu for dashboard</h4>
-            <p>Our script provides you powerful and flexible functionality. So you can also create the menu for dashboard</p>
+            <p>Our script provides you powerful and flexible functionality. So you can also create the menu for
+                dashboard</p>
             <p>
-                If you want to create a menu for a feature then you can also do it. For example there is feature called "Facebook". Under "Facebook" menu there is a menu called "Settings" that is by default menu of this feature. If you want to add menu under "Facebook" like the image below then when you will create a menu you must set name as like the Feature menu name. For example in this case them menu name will be "Facebook".
+                If you want to create a menu for a feature then you can also do it. For example there is feature called
+                "Facebook". Under "Facebook" menu there is a menu called "Settings" that is by default menu of this
+                feature. If you want to add menu under "Facebook" like the image below then when you will create a menu
+                you must set name as like the Feature menu name. For example in this case them menu name will be
+                "Facebook".
             </p>
             <div class="row">
                 <div class="col-md-6"><img src="assets/images/menu_old.png"></div>
                 <div class="col-md-6"><img src="assets/images/menu_new.png"></div>
             </div>
             <div class="row">
-                 <p>Watch the video about how to build menu for both site and dashboard</p>
+                <p>Watch the video about how to build menu for both site and dashboard</p>
                 <p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eFsE5StKArI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eFsE5StKArI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </p>
             </div>
 
 
+        </div>
+        <div class="doc-section" id="settings-section">
+            <h2 class="section-title">Settings</h2>
+            <p>
+                In settings section you can set your software name , footer text , and stripe keys
+                <br>
+                You can find it at <code>Admin Settings > Settings </code>
+            </p>
+        </div>
+
+        <div class="doc-section" id="config-section">
+            <h1 class="section-title">Configuration</h1>
+            <p>
+                In config section you can edit and add new fields the <code>.env</code> . <br>
+                You can also backup the <code>.env</code> files and restore that contain all configuration including
+                database credentials.
+            </p>
+            <img src="assets/images/Configuration%20Manager.png">
+        </div>
+
+        <div class="doc-section" id="translation-section">
+            <h1 class="section-title">Translation Manager</h1>
+            <p>
+                You can find this option at <code>Admin Settings > Translation</code> <br>
+                You can translate the software with your own language . Our script is multilingual.
+            </p>
+            <img src="assets/images/Translation%20Manager.png">
+        </div>
+
+        <div class="doc-section" id="backup-section">
+            <h1 class="section-title">Backup Manager</h1>
+            <p>
+                You can backup all files and database and also can download it using Backup Manager .<br>
+                You can access this option at <code>Admin Settings > Backup</code>
+                <img src="assets/images/Backup%20Manager.png">
+            </p>
+        </div>
+
+        <div class="doc-section" id="widgets-section">
+            <h1 class="section-title">Widgets</h1>
+            <p>Widgets are kind of short code. You can use some function on your site and user dashboard <br>
+                For example you want a login form in site / frontend then just write <code>[login]</code> on front page
+                content . You can find widgets at <code>Admin Settings > Widgets</code> . You can also find available
+                widgets at this page .
+            </p>
+            <img src="assets/images/Widgets.png">
         </div>
 
 
